@@ -1,0 +1,190 @@
+/* ===== Reset e corpo ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px; /* base para aumentar depois */
+  transition: all 0.3s ease;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background: #002147; /* azul bem escuro */
+  color: #ffffff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* ===== Botões de acessibilidade ===== */
+.accessibility-tools {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.accessibility-tools button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ffffff;
+  color: #002147; /* combina com o header */
+  min-width: 44px;
+  min-height: 44px;
+  transition: all 0.2s ease;
+}
+
+/* ===== Navegação ===== */
+nav {
+  background-color: #000000;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffff; /* amarelo forte */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #ff0000; /* verde neon no hover */
+}
+
+.Sair{
+    display: flex;
+    justify-content: center;
+}
+
+a:hover{
+    transition: 0.5s ease;
+    font-size: 30px;
+
+}
+
+/* ===== Área principal ===== */
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background-color: #f5f5f5;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 10px solid;
+}
+
+#onibus {
+  border-color: #0057e7; /* azul forte */
+}
+
+#estacoes {
+  border-color: #008744; /* verde forte */
+}
+
+#apoio {
+  border-color: #d62d20; /* vermelho forte */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Lista */
+ul {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Imagens */
+.imagem {
+  width: 300px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 3px solid #000; /* contorno para visibilidade */
+ 
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background: #002147;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ===== Alto contraste ===== */
+body.high-contrast {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.high-contrast header,
+body.high-contrast nav,
+body.high-contrast footer,
+body.high-contrast section {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+body.high-contrast nav a {
+  color: yellow !important;
+}
+
+/* ===== Aumentar fonte ===== */
+body.large-font {
+  font-size: 20px; /* base aumentada, todos os elementos com rem/em crescem proporcionalmente */
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .accessibility-tools {
+    flex-direction: column;
+  }
+}
+
+/* Modo Daltonismo */
+.colorblind-mode {
+  /* Cores com contraste seguro */
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.colorblind-mode a {
+  color: #0055cc; /* Azul mais escuro para melhor contraste */
+}
+
+.colorblind-mode .imagem {
+  filter: grayscale(100%) contrast(120%);
+  /* deixa imagens neutras para não confundir nas cores */
+}

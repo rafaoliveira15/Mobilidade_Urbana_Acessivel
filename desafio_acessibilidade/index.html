@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header style="text-align: center; padding: 20px;">
+  <img src="img/logo.png" 
+       alt="Logo Transporte Acessível" 
+       style="width: 120px; display: block; margin: 0 auto 10px;">
+    
+    
+    <h1> Transporte e Mobilidade Urbana</h1>
+    <p>Acessibilidade e inclusão para todos</p>
+
+    <!-- Botões de acessibilidade -->
+    <div class="accessibility-tools">
+      <button onclick="document.body.classList.toggle('high-contrast')">Alto Contraste</button>
+      <button onclick="document.body.classList.toggle('large-font')">Aumentar Fonte</button>
+      <button onclick="document.body.classList.toggle('colorblind-mode')"> Modo Daltonismo</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#onibus">Ônibus</a>
+    <a href="#estacoes">Estações</a>
+    <a href="#apoio">Pontos de Apoio</a>
+  </nav>
+
+  <main>
+    <section id="onibus">
+      <h2> <a href="onibus.html" style="text-decoration: none;">Ônibus com acessibilidade</a></h2>
+      <img src="img/6665c559-0464-49b0-813b-c56f1584f553.jpg" class="imagem">
+      <ul>
+        <li>Linha 101 – Possui rampa e espaço para cadeira de rodas.</li>
+        <li>Linha 205 – Sem adaptação completa.</li>
+        <li>Linha 330 – Elevador hidráulico disponível.</li>
+      </ul>
+    </section>
+
+    <section id="estacoes">
+      <h2> <a href="estacao.html" style="text-decoration: none;">Estações acessíveis</a></h2>
+      <img src="img/eeec311a-2052-4298-96be-6aa12ed83f40.jpg" alt="Estação de metrô com acessibilidade" class="imagem">
+      <ul>
+        <li>Estação Central – Elevador e piso tátil.</li>
+        <li>Estação Leste – Piso tátil, sem elevador.</li>
+        <li>Estação Norte – Elevador disponível.</li>
+      </ul>
+    </section>
+
+    <section id="apoio">
+      <h2> <a href="apoio.html" style="text-decoration: none;">Pontos de apoio</a></h2>
+      <img src="img/27ceca8c-e02d-4622-a75d-fbba5672b127.jpg" alt="Ponto de apoio com atendimento" class="imagem">
+      <ul>
+        <li>Balcão de informações adaptado – Estação Central.</li>
+        <li>Posto móvel – Rua das Flores.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ViaAcess. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
